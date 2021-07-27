@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "eventHubName": "mheventhub",
+      "connection": "MyEventHubListenAppSetting",
+      "dataType": "string",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ]
+}
