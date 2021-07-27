@@ -3,7 +3,7 @@ module.exports = async function (context, documents) {
         context.log('Documents modified: ', documents.length);
         context.log('Document Id: ', documents[0].id);
 
-        context.bindings.outputEventHubMessage = "Message created for ID: " + documents[0].id;
+        context.bindings.outputEventHubMessage = { id: documents[0].id, name: documents[0].name };
         context.done();
     }
 }
