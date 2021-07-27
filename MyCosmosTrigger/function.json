@@ -9,6 +9,13 @@
       "databaseName": "my-database",
       "collectionName": "my-container",
       "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "type": "eventHub",
+      "name": "outputEventHubMessage",
+      "eventHubName": "mheventhub",
+      "connection": "MyEventHubSendAppSetting",
+      "direction": "out"
     }
   ]
 }
