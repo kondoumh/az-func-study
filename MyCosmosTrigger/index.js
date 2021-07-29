@@ -4,6 +4,7 @@ module.exports = async function (context, documents) {
         context.log('Document Id: ', documents[0].id);
 
         context.bindings.outputEventHubMessage = { id: documents[0].id, name: documents[0].name };
+        context.bindings.outputTopic2 = { id: documents[0].id, name: documents[0].name};
         context.done();
     }
 }

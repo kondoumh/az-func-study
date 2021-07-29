@@ -16,6 +16,13 @@
       "eventHubName": "mheventhub",
       "connection": "MyEventHubSendAppSetting",
       "direction": "out"
+    },
+    {
+      "type": "eventHub",
+      "name": "outputTopic2",
+      "eventHubName": "topic2",
+      "connection": "MyEventHubSendAppSetting",
+      "direction": "out"
     }
   ]
 }
